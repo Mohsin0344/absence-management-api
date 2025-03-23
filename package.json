@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
+    "start": "pm2 start server.js --name absence-management-api --watch",
     "dev": "nodemon server.js"
   },
   "keywords": [],
@@ -17,7 +17,8 @@
     "fs": "^0.0.1-security",
     "helmet": "^8.1.0",
     "morgan": "^1.10.0",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "pm2": "^6.0.5"
   },
   "devDependencies": {
     "nodemon": "^3.1.9"
